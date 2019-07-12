@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title >
+      Court Counter
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div>>
+<ion-grid style="height: 100%">
+  <ion-row >
+    <ion-col>
+      <p>Team A</p>
+    </ion-col>
+
+    <ion-col>
+      <p>Team B</p>
+      
+    </ion-col>
+  </ion-row>
+  <ion-row>
+     
+    <ion-col width-25>
+       
+            <ion-label>{{totalA}}</ion-label>
+           
+          
+    </ion-col>
+   
+    <ion-col width-25>
+        <ion-label>{{totalB}}</ion-label>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+      <ion-col  width-25>
+          <ion-button (click)="decrease3()" expand="default" color="warning">-3</ion-button>
+          <ion-button (click)="increase3()"  expand="default" color="warning">+3</ion-button>
+         
+        </ion-col>
+      
+        <ion-col  width-50>
+            <ion-button (click)="decrease3B()" expand="default" color="warning">-3</ion-button>
+            <ion-button (click)="increase3B()"expand="default" color="warning">+3</ion-button>
+          </ion-col>
+
+  </ion-row>
+ 
+  
+ 
+<ion-row>
+  <ion-col  width-25>
+    <ion-button (click)="decrease2()" expand="default" color="warning">-2</ion-button>
+    <ion-button (click)="increase2()" expand="default" color="warning">+2</ion-button>
+  </ion-col>
+
+  
+
+  <ion-col width-25>
+    <ion-button (click)="decrease2B()" expand="default" color="warning">-2</ion-button>
+    <ion-col width-50>
+      <ion-button (click)="increase2B()" expand="default" color="warning">+2</ion-button>
+    </ion-col>
+  </ion-col>
+ 
+  
+</ion-row>
+<ion-row><ion-col  width-25>
+  <ion-button (click)="decrease1()" expand="default" color="warning">-1</ion-button>
+  <ion-button (click)="increase1()" expand="default" color="warning">+1</ion-button>
+</ion-col>
+<ion-col  width-25>
+  <ion-button (click)="decrease1B()"expand="default" color="warning">-1</ion-button>
+  <ion-button (click)="increase1B()" expand="default" color="warning">+1</ion-button>
+</ion-col>
+</ion-row>
+
+
+
+</ion-grid>
+</div>
+ <div class="vl"></div>
+    <div class="btn-wrapper">
+        <ion-button (click)="buttonReset()" expand="default" color="warning">RESET</ion-button>
+    </div>
+ 
+</ion-content>
